@@ -273,3 +273,165 @@ body {
   font-size: 0.9rem;
   color: #555;
 }
+.tinder-container {
+  width: 100%;
+  max-width: 450px; /* Máximo para pantallas grandes */
+  height: 100%;
+  position: relative;
+  margin: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-stack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 0px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.537);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .info {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1.1em;
+  margin-top: 5px;
+  color: #ddd;
+}
+
+/* Botones de Like y Dislike */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.btn.dislike {
+  background: #ff4c4c;
+  color: white;
+}
+
+.btn.like {
+  background: #4caf50;
+  color: white;
+}
+
+/* Estilos para móviles */
+@media screen and (max-width: 600px) {
+  .tinder-container {
+    width: 90%;
+    max-width: 400px;
+    height: 85%;
+  }
+
+  .card-stack {
+    height: 100%;
+  }
+
+  .card {
+    border-radius: 15px;
+  }
+
+  .card .info {
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 1.2em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+
+  .buttons {
+    width: 75%;
+    margin-top: 15px;
+  }
+
+  .btn {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+}
+
+/* Estilos para pantallas grandes (Escritorio) */
+@media screen and (min-width: 1024px) {
+  .tinder-container {
+    width: 80%;
+    max-width: 450px;
+    height: 80%;
+  }
+
+  .card {
+    border-radius: 25px;
+  }
+
+  .card .info {
+    padding: 25px;
+  }
+
+  .card h3 {
+    font-size: 1.6em;
+  }
+
+  .card p {
+    font-size: 1.2em;
+  }
+
+  .buttons {
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .btn {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+  }
+}
