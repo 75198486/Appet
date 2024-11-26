@@ -1,4 +1,3 @@
-// script.js
 import { auth } from './firebase-config.js';
 import { GoogleAuthProvider, signInWithPopup, signOut } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 
@@ -20,7 +19,7 @@ loginButton.addEventListener('click', () => {
         loginButton.classList.add('hidden');
         
         // Redirigir a home.html después de iniciar sesión
-        window.location.href = 'home.html';  // Redirige a otra página
+        window.location.href = './App/Home1.html';  // Redirige a otra página
       })
       .catch((error) => {
         console.error('Error al iniciar sesión: ', error);

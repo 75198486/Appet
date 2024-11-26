@@ -76,9 +76,9 @@
     width: 90%;  /* Ancho del 90% de la pantalla */
     padding: 15px;
     font-size: 16px;
-    background-color: #4285F4;  /* Color de fondo de Google */
+    background-color: #3bac4c;  /* Color de fondo de Google */
     color: white;
-    border: none;
+    border: 5px solid #3bac4c;
     border-radius: 40px;
     cursor: pointer;
     text-align: center;
@@ -86,7 +86,10 @@
   }
  
   .login-btn:hover {
-    background-color: #357ae8;  /* Cambio de color en hover */
+    border: 5px solid #3bac4c;
+    color: rgb(82, 82, 82);
+    font-weight: 10px;
+    background-color: #ffffff;  /* Cambio de color en hover */
   }
   
   /* Enlace de política de privacidad */
